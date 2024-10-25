@@ -15,6 +15,18 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Configure Plotly to work with Streamlit
+st.write("""
+<style>
+[data-testid="stMetricValue"] {
+    font-size: 28px;
+}
+[data-testid="stMetricDelta"] {
+    font-size: 16px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Enhanced custom CSS
 st.markdown("""
     <style>
